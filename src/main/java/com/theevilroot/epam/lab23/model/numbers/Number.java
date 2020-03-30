@@ -41,22 +41,18 @@ public class Number {
     /** Operations **/
 
     public Number add(Number number) {
-        value += number.getValue();
-        return this;
+        return new Number(number.getValue() + getValue());
     }
 
     public Number subtract(Number number) {
-        value -= number.getValue();
-        return this;
+        return new Number(getValue() - number.getValue());
     }
 
     public Number multiply(Number number) {
-        value *= number.getValue();
-        return this;
+        return new Number(getValue() * number.getValue());
     }
 
     public Number divide(Number number) {
-        value /= number.getValue();
-        return this;
+        return new Number(getValue() / number.getValue());
     }
 }

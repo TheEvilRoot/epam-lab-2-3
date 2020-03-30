@@ -1,6 +1,5 @@
 package com.theevilroot.epam.lab23.api;
 
-import java.util.List;
 import java.util.stream.Stream;
 
 public interface ListObservable<T> {
